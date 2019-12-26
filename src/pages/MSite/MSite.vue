@@ -2,17 +2,20 @@
          <div class="on">
       <section class="msite">
         <!--首页头部-->
-        <header class="msite_header">
-          <span class="header_search">
+        <HeaderTop title="昌平福科技园">
+          
+            <span class="header_search" slot="left">
             <i class="iconfont icon-sousuo"></i>
-          </span>
-          <span class="header_title">
-            <span class="header_title_text ellipsis">昌平区北七家宏福科技园(337省道北)</span>
-          </span>
-          <span class="header_login">
+            </span>
+        
+          
+            <span class="header_login" slot="right">
             <span class="header_login_text">登录|注册</span>
           </span>
-        </header>
+   
+        </HeaderTop>
+
+      
         <!--首页导航-->
         <nav class="msite_nav">
           <div class="swiper-container">
@@ -314,11 +317,15 @@
 </template>
 
 <script>
+import HeaderTop from '@/components/HeaderTop/HeaderTop.vue'
 export default {
   data () {
     return {
 
     }
+  },
+  components:{
+    HeaderTop
   }
 }
 </script>
