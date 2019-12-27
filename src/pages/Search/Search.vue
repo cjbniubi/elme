@@ -2,11 +2,7 @@
       <!--搜索-->
     <div>
       <section class="search">
-        <header class="header">
-          <a class="header_title">
-            <span class="header_title_text">搜索</span>
-          </a>
-        </header>
+         <HeaderTop title="搜索" />
         <form class="search_form" action="#">
           <input type="search" name="search" placeholder="请输入商家或美食名称" class="search_input">
           <input type="submit" name="submit" class="search_submit">
@@ -16,11 +12,16 @@
 </template>
 
 <script>
+import HeaderTop from '@/components/HeaderTop/HeaderTop.vue'
+
 export default {
   data () {
     return {
 
     }
+  },
+  components:{
+    HeaderTop
   }
 }
 </script>

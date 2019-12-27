@@ -50,6 +50,7 @@ export default {
     width 100%
     height 50px
     display flex
+    z-index 999
     .guide_item
       display flex
       flex 1
