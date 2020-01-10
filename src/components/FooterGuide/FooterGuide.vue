@@ -1,6 +1,6 @@
-<template>
+ <template>
   <footer class="footer_guide border-1px">
-    <router-link to="./msite"  class="guide_item on">
+    <router-link to="./msite"  class="guide_item">
       <span class="item_icon">
         <i class="iconfont icon-waimai"></i>
       </span>
@@ -28,14 +28,22 @@
 </template>
 
 <script>
+
+import {reqAdress} from '@/api/ajax.js'
+
 export default {
   data () {
     return {
 
     }
-  }
+  },
+  mounted() {
+    console.log(reqAdress)
+    
+  },
 }
 </script>
+
 <style lang="stylus">
 @import '../../common/stylus/mixins.styl';
 
