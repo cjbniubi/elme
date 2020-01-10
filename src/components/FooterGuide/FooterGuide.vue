@@ -29,7 +29,7 @@
 
 <script>
 
-import {reqAdress} from '@/api/ajax.js'
+import {reqfoodlist} from '@/api/ajax.js'
 
 export default {
   data () {
@@ -37,8 +37,9 @@ export default {
 
     }
   },
-  mounted() {
-    console.log(reqAdress)
+  async mounted() {
+    console.log(await reqfoodlist());
+    
     
   },
 }

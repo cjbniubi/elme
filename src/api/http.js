@@ -1,5 +1,5 @@
 import axios from 'axios'
-export default function go(url,data,type='get'){
+export default function go(url,data={},type='get'){
   return new Promise((resolve,reject)=>{
     // 请求这个地址成功后才执行resolve方法  
     // 判断type是否微get 如果是
