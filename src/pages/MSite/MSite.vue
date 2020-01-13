@@ -2,7 +2,7 @@
   <div class="on">
     <section class="msite">
       <!--首页头部-->
-      <HeaderTop title="昌平福科技园">
+      <HeaderTop :title=address.name>
         <span class="header_search" slot="left">
           <i class="iconfont icon-sousuo"></i>
         </span>
@@ -137,6 +137,10 @@
 import Swiper from 'swiper'
 import 'swiper/css/swiper.css'
 
+// 利用vuex调用state里面的方法
+import {mapState} from 'vuex'
+
+
 import HeaderTop from '@/components/HeaderTop/HeaderTop.vue'
 import Shoplist from '@/components/Shoplist/Shoplist.vue'
 
@@ -152,11 +156,18 @@ export default {
       }
     })
   },
+  props:{
+    title:String
+  },
   data () {
     return {
 
     }
   },
+computed: {
+    ...mapState(['address'])
+  
+},
   components: {
     HeaderTop,
     Shoplist

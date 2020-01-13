@@ -29,19 +29,12 @@
 
 <script>
 
-import {reqfoodlist} from '@/api/ajax.js'
-
 export default {
   data () {
     return {
 
     }
-  },
-  async mounted() {
-    console.log(await reqfoodlist());
-    
-    
-  },
+  }
 }
 </script>
 
